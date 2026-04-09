@@ -1,0 +1,9 @@
+# Créer le répertoire du site intranet
+mkdir -p /var/www/intranet
+mkdir -p /var/www/intranet/assets
+mkdir -p /var/www/intranet/assets/css
+mkdir -p /var/www/intranet/assets/img
+
+# Définir les permissions (www-data = utilisateur Apache sur Debian)
+chown -R www-data:www-data /var/www/intranet
+chmod -R 755 /var/www/intranet
