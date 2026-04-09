@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BillU — Solutions Informatiques</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; }
+
+        /* Hero section */
+        .hero {
+            background: linear-gradient(135deg, #0d47a1, #1565c0);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .hero h1 { font-size: 3em; margin-bottom: 15px; }
+        .hero p { font-size: 1.2em; opacity: 0.9; max-width: 600px; margin: 0 auto 30px; }
+        .btn {
+            background: white;
+            color: #0d47a1;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+        .btn:hover { transform: scale(1.05); }
+
+        /* Services */
+        .services {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .services h2 { font-size: 2em; color: #0d47a1; margin-bottom: 40px; }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 25px;
+        }
+        .service-card {
+            background: #f5f7ff;
+            border-radius: 10px;
+            padding: 30px 20px;
+            border-top: 3px solid #0d47a1;
+        }
+        .service-card .icon { font-size: 2.5em; margin-bottom: 12px; }
+        .service-card h3 { color: #0d47a1; margin-bottom: 8px; }
+        .service-card p { color: #666; font-size: 0.9em; }
+
+        /* Contact */
+        .contact {
+            background: #f0f4ff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .contact h2 { font-size: 1.8em; color: #0d47a1; margin-bottom: 15px; }
+        .contact p { color: #555; margin-bottom: 8px; }
+
+        footer {
+            background: #0d47a1;
+            color: rgba(255,255,255,0.8);
+            text-align: center;
+            padding: 20px;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <h1>🏢 BillU</h1>
+    <p>Solutions informatiques innovantes pour les entreprises modernes.
+    Infrastructure, sécurité, cloud — nous gérons votre IT.</p>
+    <a href="#contact" class="btn">Nous contacter</a>
+</section>
+
+<section class="services">
+    <h2>Nos Services</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <div class="icon">🔒</div>
+            <h3>Sécurité</h3>
+            <p>Audit de sécurité, pare-feu, VPN, gestion des accès</p>
+        </div>
+        <div class="service-card">
+            <div class="icon">🌐</div>
+            <h3>Infrastructure</h3>
+            <p>Active Directory, serveurs, virtualisation Proxmox</p>
+        </div>
+        <div class="service-card">
+            <div class="icon">📞</div>
+            <h3>Téléphonie</h3>
+            <p>Solution VoIP, standard téléphonique, mobilité</p>
+        </div>
+        <div class="service-card">
+            <div class="icon">☁️</div>
+            <h3>Cloud Privé</h3>
+            <p>Messagerie, stockage, gestion de projets on-premise</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>📬 Contact</h2>
+    <p>📧 contact@billu.com</p>
+    <p>📞 +33 1 23 45 67 89</p>
+    <p>📍 Angoulême, France</p>
+</section>
+
+<footer>
+    &copy; 2024 BillU — Tous droits réservés
+</footer>
+
+</body>
+</html>
