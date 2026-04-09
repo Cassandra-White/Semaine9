@@ -1,0 +1,6 @@
+mkdir -p /var/www/public
+mkdir -p /var/www/public/assets/css
+mkdir -p /var/www/public/assets/img
+
+chown -R www-data:www-data /var/www/public
+chmod -R 755 /var/www/public
