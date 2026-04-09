@@ -1,0 +1,12 @@
+# Créer le répertoire pour les certificats
+mkdir -p /etc/apache2/ssl
+
+# Générer le certificat auto-signé pour l'intranet
+openssl req -x509 -nodes -days 3650 -newkey rsa:2048 \
+    -keyout /etc/apache2/ssl/intranet.key \
+    -out /etc/apache2/ssl/intranet.crt \
+    -subj "/C=FR/ST=Charente/L=Angouleme/O=BillU/CN=intranet.billu.local" \
+    -addext "subjectAltName=DNS:intranet.billu.local,DNS:intranet,IP:172.20.100.57"
+
+# Sécuriser la clé privée
+chmod 600 /etc/apache2/ssl/intranet.key
